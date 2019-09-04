@@ -61,7 +61,7 @@ class JokeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(joke: Joke) {
-            itemView.user_name.text = joke.value
+            itemView.joke.text = joke.value
         }
     }
 

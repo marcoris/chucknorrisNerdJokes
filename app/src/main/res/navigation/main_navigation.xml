@@ -15,8 +15,8 @@
               android:label="favorites"
               tools:layout="@layout/fragment_favorites"/>
 
-    <fragment android:id="@+id/settings"
-              android:name="ch.risdesign.chucknorrisnerdjokes.fragments.Settings"
+    <fragment android:id="@+id/about"
+              android:name="ch.risdesign.chucknorrisnerdjokes.fragments.About"
               android:label="settings"
-              tools:layout="@layout/fragment_settings"/>
+              tools:layout="@layout/fragment_about"/>
 </navigation>

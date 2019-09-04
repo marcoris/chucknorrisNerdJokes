@@ -14,7 +14,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         bottom_nav.setupWithNavController(findNavController(R.id.nav_host_fragment))
-
-        val client = MyRetrofitClient()
     }
 }

@@ -35,9 +35,9 @@ class Favorites : Fragment() {
         //Create a dummy list of data
         val data: MutableList<Joke> = arrayListOf()
         for (i in 0..33) {
-            data.add(Joke(3, "Hansli..."))
-            data.add(Joke(34, "...ist am kacken..."))
-            data.add(Joke(26, "...und es stinkt fürchterlich"))
+            data.add(Joke("Hansli..."))
+            data.add(Joke("...ist am kacken..."))
+            data.add(Joke("...und es stinkt fürchterlich"))
         }
 
         //Inform the recycler view that it uses the adapter we created.

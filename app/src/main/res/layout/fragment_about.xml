@@ -3,16 +3,17 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".fragments.Settings">
+             tools:context=".fragments.About">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Settings page"
+            android:text="About\n\nDiese App wurde von Marco Ris programmiert und ist eine Abschlussarbeit der TEKO Bern vom Fach Embedded Systems Software mit Android.\n\nDie Voraussetzungen beinhalten:\n- Eine Liste\n- 2-3 Views\n- Persistente Speicherung\n- Networking"
             android:background="#000000"
             android:textColor="#00FF00"
-            android:padding="10dp"
+            android:padding="20dp"
+            android:textSize="20sp"
             android:fontFamily="monospace"/>
 
 </FrameLayout>
