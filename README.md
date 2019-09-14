@@ -6,3 +6,6 @@ Android app for school
 - 2-3 Views
 - Persistent
 - Networking
+
+### Mockups
+![mockups](mockup.png "Mockups")

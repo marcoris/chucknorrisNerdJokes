@@ -5,8 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ch.risdesign.chucknorrisnerdjokes.R
-import ch.risdesign.chucknorrisnerdjokes.model.Joke
-import kotlinx.android.synthetic.main.item_joke.view.*
+import ch.risdesign.chucknorrisnerdjokes.model.MyListe
+import kotlinx.android.synthetic.main.item_myliste.view.*
 
 /**
  * The user adapter is responsible for matching the data with the placeholder class.
@@ -15,17 +15,17 @@ import kotlinx.android.synthetic.main.item_joke.view.*
  * REMEMBER: Call a notify function like [notifyDataSetChanged] to inform the Adapter class
  * that we have changed the data, else it will not rerender.
  */
-class JokeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class ListAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 
-    private var data: List<Joke> = arrayListOf()
+    private var data: List<MyListe> = arrayListOf()
 
     /**
      * Creates the placeholder for every data item that will be used.
      */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         //Get the class responsible for creating a code representation of the xml file.
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_joke, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_myliste, parent, false)
         //Now create the placeholder object with our layout
         return UserViewHolder(view)
     }
@@ -49,7 +49,7 @@ class JokeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     /**
      * Set the new data set to this adapter
      */
-    fun setData(newData: List<Joke>) {
+    fun setData(newData: List<MyListe>) {
         data = newData
         notifyDataSetChanged()
     }
@@ -60,8 +60,8 @@ class JokeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
      */
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bind(joke: Joke) {
-            itemView.joke.text = joke.value
+        fun bind(myListe: MyListe) {
+            itemView.item_list.text = myListe.value
         }
     }
 
