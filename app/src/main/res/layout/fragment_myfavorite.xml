@@ -4,10 +4,9 @@
         xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".fragments.Favorites"
+             tools:context=".fragments.MyFavorite"
         android:id="@+id/favorites">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
             android:id="@+id/showPersistent"
             android:layout_width="0dp"

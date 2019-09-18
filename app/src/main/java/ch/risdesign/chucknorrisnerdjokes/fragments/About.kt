@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_about.*
  */
 class About : Fragment() {
 
-    //Create an instance of the adapter that we want to use
+    //Create an instance of the adapter that we want to use to show a list
     var adapter = ListAdapter()
 
     override fun onCreateView(
@@ -33,18 +33,20 @@ class About : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Create a dummy list of data
+        // Create a list with data
         val data: MutableList<MyListe> = arrayListOf()
 
-        data.add(MyListe("${MY_LIST_STYLE} Liste (wie diese)"))
+        data.add(MyListe("${MY_LIST_STYLE} List (like this)"))
         data.add(MyListe("${MY_LIST_STYLE} 2-3 Views"))
-        data.add(MyListe("${MY_LIST_STYLE} Persistente Speicherung"))
-        data.add(MyListe("${MY_LIST_STYLE} Networking (externe API)"))
+        data.add(MyListe("${MY_LIST_STYLE} Persistent saving"))
+        data.add(MyListe("${MY_LIST_STYLE} Networking (extern API)"))
 
         //Inform the recycler view that it uses the adapter we created.
         recycler_view.adapter = adapter
+
         //The layout manager will tell the recycler view HOW to render the rows.
         recycler_view.layoutManager = LinearLayoutManager(view.context)
+
         //Set the data
         adapter.setData(data)
 

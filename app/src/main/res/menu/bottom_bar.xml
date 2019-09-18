@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:icon="@drawable/ic_star_black_24dp"
-          android:title="Favorites"
+          android:title="Favorite"
           app:showAsAction="always"
-          android:id="@+id/favorites"/>
+          android:id="@+id/favorite"/>
 
     <item android:icon="@drawable/ic_replay_black_24dp"
           android:title="Reload"

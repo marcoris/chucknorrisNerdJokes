@@ -7,17 +7,17 @@
 
     <fragment android:id="@+id/home"
               android:name="ch.risdesign.chucknorrisnerdjokes.fragments.Home"
-              android:label="fragment_navigation_one"
+              android:label="reload"
               tools:layout="@layout/fragment_home"/>
 
     <fragment android:id="@+id/about"
               android:name="ch.risdesign.chucknorrisnerdjokes.fragments.About"
-              android:label="settings"
+              android:label="about"
               tools:layout="@layout/fragment_about"/>
 
     <fragment
-                android:id="@+id/favorites"
-                android:name="ch.risdesign.chucknorrisnerdjokes.fragments.Favorites"
-                android:label="favorites"
-                tools:layout="@layout/fragment_favorites" />
+                android:id="@+id/favorite"
+                android:name="ch.risdesign.chucknorrisnerdjokes.fragments.MyFavorite"
+                android:label="favorite"
+                tools:layout="@layout/fragment_myfavorite" />
 </navigation>
